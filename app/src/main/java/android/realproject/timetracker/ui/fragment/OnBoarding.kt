@@ -1,4 +1,4 @@
-package android.realproject.timetracker.fragment
+package android.realproject.timetracker.ui.fragment
 
 import androidx.compose.runtime.Composable
 

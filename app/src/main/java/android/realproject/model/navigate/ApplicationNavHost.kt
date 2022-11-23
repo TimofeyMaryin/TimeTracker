@@ -1,9 +1,9 @@
 package android.realproject.model.navigate
 
 import android.realproject.data.view_model.InfoAboutDayViewModel
-import android.realproject.timetracker.fragment.InfoAboutDayFragment
-import android.realproject.timetracker.fragment.OnBoarding
-import android.realproject.timetracker.fragment.StatisticForWeek
+import android.realproject.timetracker.ui.fragment.InfoAboutDayFragment
+import android.realproject.timetracker.ui.fragment.OnBoarding
+import android.realproject.timetracker.ui.fragment.StatisticForWeek
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
