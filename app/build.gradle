@@ -1,16 +1,17 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
     namespace 'android.realproject.timetracker'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "android.realproject.timetracker"
         minSdk 26
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -60,4 +61,17 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
+
+    // navigation
+    def nav_version = "2.5.3"
+    implementation "androidx.navigation:navigation-compose:$nav_version"
+
+    // constraint
+    implementation "androidx.constraintlayout:constraintlayout-compose:1.0.1"
+
+    // db
+    def room_version = "2.4.1"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
 }
